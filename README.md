@@ -1,7 +1,7 @@
 
 # Implementacja algorytmu ID3
 
-Generacja binarnego drzewa decyzyjnego na podstawie zbioru danych
+Generacja binarnego drzewa decyzyjnego na podstawie zbioru danych.
 
 
 ## Przygotowanie danych

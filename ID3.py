@@ -1,6 +1,7 @@
 import time
 from tkinter import Tk  # from tkinter import Tk for Python 3.x
 from tkinter.filedialog import askopenfilename
+
 import numpy as np  # mathematical calculation
 import pandas as pd  # manipulating the csv data
 from anytree import Node  # node classes for graph generation
@@ -195,5 +196,12 @@ while (len(table_and_node) > 0):  # split tables untill found purity
     temp = []
 
 DotExporter(root).to_dotfile("tree.dot")
+
+try:
+    DotExporter(root, nodeattrfunc=set_color_shape,
+                edgeattrfunc=lambda parent, child: "style=bold,label=%s" % (child.weight or "?")).to_picture(
+        "ID3.png")  # export graph to ID3.png
+except:
+    print("Nie udało się wyeksportować drzewka do .png")
 
 print("Exec time: --- %s seconds ---" % round((time.time() - start_time), 2))

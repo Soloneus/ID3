@@ -7,10 +7,10 @@ import pandas as pd  # manipulating the csv data
 from anytree import Node  # node classes for graph generation
 from anytree.exporter import DotExporter  # node structure export to img
 
-start_time = time.time()
-
 Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
 filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+
+start_time = time.time()
 
 # data needs to be arranged in a certain way before importing
 # 2 level of headers are needed

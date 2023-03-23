@@ -1,7 +1,7 @@
 
 # Implementacja algorytmu ID3
 
-Generacja binarnego drzewka decyzyjnego na podstawie zbioru danych
+Generacja binarnego drzewa decyzyjnego na podstawie zbioru danych
 
 
 ## Przygotowanie danych
@@ -23,7 +23,7 @@ tkinter
 
 ## Uruchomienie
 
-Po uruchomieniu skryptu `ID3.py` należy wybrać gdzie znajduje się plik z danymi. W wyniku działania skryptu zostanie wygenerowany plik `tree.dot` który reprezentuje połączenia między elementami binarnego drzewka decyzyjnego. Zawartość tego pliku dla danych z przykładu będzie wyglądać następująco:
+Po uruchomieniu skryptu `ID3.py` należy wybrać gdzie znajduje się plik z danymi. W wyniku działania skryptu zostanie wygenerowany plik `tree.dot` który reprezentuje połączenia między elementami binarnego drzewa decyzyjnego oraz plik `ID3.png` jeżeli wykryte zostało oprogramowanie GraphViz. Zawartość pliku `.dot` dla danych z przykładu będzie wyglądać następująco:
 ```
 digraph tree {
     "0. mieszka: wieś";
@@ -49,6 +49,10 @@ digraph tree {
 
 ## Wizualizacja
 
-Drzewko wygenerowane w `.dot` można zwizualizować przy pomocy oprogramowania GraphViz. Wersja online: [GraphViz](https://dreampuf.github.io/GraphvizOnline/)
+Binarne drzewo decyzyjne zostanie wyeksportowane do `ID3.png` jeżeli został zainstalowany [GraphViz](https://graphviz.org/). Zachowane zostaną wówczas wszystkie atrybuty elementów grafu, takie jak kolor, kształt i opis strzałek. 
+
+![GraphViz](examples/ID3.png)
+
+Drzewko wygenerowane w `.dot` można również zwizualizować bez instalowania dodatkowego oprogramowania przy pomocy wersji online: [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
 ![GraphViz](examples/graphviz.png)

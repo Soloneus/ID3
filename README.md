@@ -9,7 +9,7 @@ Dane należy przygotować w postaci pliku `.csv`. Zbiór danych musi być w post
 
 ### Przykład struktury danych
 
-![structure](examples/data_structure.png)
+![structure](examples/lecture/data_structure.png)
     
 ## Wymagane biblioteki
 
@@ -51,8 +51,8 @@ digraph tree {
 
 Binarne drzewo decyzyjne zostanie wyeksportowane do `ID3.png` jeżeli został zainstalowany [GraphViz](https://graphviz.org/). Zachowane zostaną wówczas wszystkie atrybuty elementów grafu, takie jak kolor, kształt i opis strzałek. 
 
-![GraphViz](examples/ID3.png)
+![GraphViz](examples/lecture/ID3.png)
 
 Drzewko wygenerowane w `.dot` można również zwizualizować bez instalowania dodatkowego oprogramowania przy pomocy wersji online: [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
-![GraphViz](examples/graphviz.png)
+![GraphViz](examples/lecture/graphviz.png)

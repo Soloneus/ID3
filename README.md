@@ -1,17 +1,18 @@
 
-# Implementacja algorytmu ID3
+# ID3 Algorithm Implementation
 
-Generacja binarnego drzewa decyzyjnego na podstawie zbioru danych.
+Generating a binary decision tree based on a dataset.
 
 
-## Przygotowanie danych
-Dane należy przygotować w postaci pliku `.csv`. Zbiór danych musi być w postaci długiej z dwoma poziomami nagłówków. Pierwszy poziom powinien składać się z nazwy warunku a następny z wartości poszczególnych warunków. Konkluzje powinny być ostatnimi kolumnami tabeli.
 
-### Przykład struktury danych
+## Data Preparation
+The data should be prepared in a .csv file format. The dataset should be in a long format with two levels of headers. The first level should consist of condition names, and the next level should contain values for each condition. Conclusions should be placed in the last columns of the table.
+
+### Example Data Structure
 
 ![structure](examples/lecture/data_structure.png)
     
-## Wymagane biblioteki
+## Required Libraries
 
 ```
 numpy
@@ -21,9 +22,9 @@ tkinter
 ```
 
 
-## Uruchomienie
+## Execution
 
-Po uruchomieniu skryptu `ID3.py` należy wybrać gdzie znajduje się plik z danymi. W wyniku działania skryptu zostanie wygenerowany plik `tree.dot` który reprezentuje połączenia między elementami binarnego drzewa decyzyjnego oraz plik `ID3.png` jeżeli wykryte zostało oprogramowanie GraphViz. Zawartość pliku `.dot` dla danych z przykładu będzie wyglądać następująco:
+After running the `ID3.py` script, you need to select the location of the data file. The script will generate a `tree.dot` file that represents the connections between elements of the binary decision tree, and an `ID3.png` file if GraphViz software is detected. The contents of the `.dot` file for the example data will look like this:
 ```
 digraph tree {
     "0. mieszka: wieś";
@@ -47,12 +48,12 @@ digraph tree {
 ```
 
 
-## Wizualizacja
+## Visualization
 
-Binarne drzewo decyzyjne zostanie wyeksportowane do `ID3.png` jeżeli został zainstalowany [GraphViz](https://graphviz.org/). Zachowane zostaną wówczas wszystkie atrybuty elementów grafu, takie jak kolor, kształt i opis strzałek. 
+The binary decision tree will be exported to `ID3.png` if [GraphViz](https://graphviz.org/) is installed. All graph element attributes, such as color, shape, and arrow descriptions, will be preserved.
 
 ![GraphViz](examples/lecture/ID3.png)
 
-Drzewko wygenerowane w `.dot` można również zwizualizować bez instalowania dodatkowego oprogramowania przy pomocy wersji online: [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
+The tree generated in `.dot` format can also be visualized without installing any additional software using the online version: [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
 ![GraphViz](examples/lecture/graphviz.png)
